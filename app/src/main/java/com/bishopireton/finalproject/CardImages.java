@@ -25,6 +25,6 @@ public class CardImages {
     };
 
     public static int getImage(Card card) {
-        return IDS[card.getSuit()][card.getRank()];
+        return IDS[card.getSuit()][card.getRank() - 1];
     }
 }

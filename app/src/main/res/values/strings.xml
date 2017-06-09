@@ -4,4 +4,17 @@
     <string name="stay">STAY</string>
     <string name="hit">HIT</string>
     <string name="play">PLAY</string>
+    <string name="you_won">YOU WON</string>
+    <string name="you_lost">YOU LOST</string>
+    <string name="stayed">STAYED</string>
+    <string name="busted">BUSTED</string>
+    <string name="tie_game">TIE GAME</string>
+    //filler is just there for visual purposes while designing
+    <string name="filler_winner">WINNER</string>
+    <string name="filler_outcome">RESULT</string>
+    <string name="filler_points">PTS</string>
+    <string name="house">HOUSE</string>
+    <string name="you">YOU</string>
+    <string name="filler_money">+ $1000</string>
+    <string name="home">HOME</string>
 </resources>

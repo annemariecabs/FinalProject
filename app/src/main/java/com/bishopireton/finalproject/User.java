@@ -37,7 +37,7 @@ public class User {
     public int sumCards() {
         int sum = 0;
         for (Card card : cards)
-            sum += card.getRank();
+            sum += card.getValue();
 
         return sum;
     }
@@ -50,6 +50,28 @@ public class User {
     public ImageView nextView() {
         current++;
         return images[current - 1];
+    }
+
+
+    //returns array with all views whose corresponding cards have aces
+    //adds null if card doesn't have an ace so it can still identify corresponding card
+    //using the position the view is in, in aceViews
+    public ArrayList<ImageView> findAces() {
+        ArrayList<ImageView> aceViews = new ArrayList<ImageView>();
+
+        for(int i = 0; i < cards.size(); i++) {
+            if (cards.get(i).getValue() == 1)
+                aceViews.add(images[i]);
+            else
+                aceViews.add(null);
+        }
+
+        return aceViews;
+    }
+
+    //if this returns true, user busted
+    public boolean checkBust() {
+        return sumCards() > 21;
     }
 }
 
