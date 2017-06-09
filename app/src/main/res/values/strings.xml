@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string name="blackjack">BLACKJACK</string>
+    <string name="stay">STAY</string>
+    <string name="hit">HIT</string>
+    <string name="play">PLAY</string>
+</resources>
