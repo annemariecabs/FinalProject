@@ -17,4 +17,10 @@ public class OpeningActivity extends AppCompatActivity {
         Intent moveOn = new Intent(this, MainActivity.class);
         startActivity(moveOn);
     }
+
+    public void onCredit(View v) {
+        //I named the Intent this because I felt like it and because it's true
+        Intent everyShouldBeRecognized = new Intent(this, CreditActivity.class);
+        startActivity(everyShouldBeRecognized);
+    }
 }

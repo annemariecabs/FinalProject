@@ -61,9 +61,11 @@ public class MainActivity extends AppCompatActivity {
         playerOutcome = null;
         houseOutcome = null;
 
-        //makes buttons disappear
+        //makes buttons disappear and view disappear
         stayButton.setVisibility(View.GONE);
         hitButton.setVisibility(View.GONE);
+        player.disappearViews();
+        house.disappearViews();
 
         //shuffles deck
         deck.shuffle();
@@ -83,12 +85,17 @@ public class MainActivity extends AppCompatActivity {
         house.addCard(deck.deal());
         setCard(house.nextView(), house.cards().get(1));
 
-        //make both buttons appear
-        stayButton.setVisibility(View.VISIBLE);
-        hitButton.setVisibility(View.VISIBLE);
+        if(player.sumCards() != 21 && house.sumCards() != 21) {
+            //make both buttons appear
+            stayButton.setVisibility(View.VISIBLE);
+            hitButton.setVisibility(View.VISIBLE);
+        }
+        else
+            blackjack();
     }
 
     public void setImage(ImageView view, int id) {
+        view.setVisibility(View.VISIBLE);
         view.setImageResource(id);
     }
 
@@ -101,10 +108,18 @@ public class MainActivity extends AppCompatActivity {
         player.addCard(deck.deal());
         setCard(player.nextView(), player.cards().get(timesHit + 2));//+ 2 because there are already two cards
 
-        if(player.checkBust())
-            busted();
-        else
+        checkWhenHit();
+    }
+
+    public void checkWhenHit() {
+        if(! player.checkBust())
             timesHit++;
+        else {
+            playerOutcome = "busted";
+            winner = house;
+
+            movingOn();
+        }
     }
 
     public void stayOnClick(View view){
@@ -136,13 +151,6 @@ public class MainActivity extends AppCompatActivity {
             else
                 winner = player;
         }
-
-        movingOn();
-    }
-
-    public void busted() {
-        playerOutcome = "busted";
-        winner = house;
 
         movingOn();
     }

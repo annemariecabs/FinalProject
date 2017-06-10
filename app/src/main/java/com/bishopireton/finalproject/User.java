@@ -1,5 +1,6 @@
 package com.bishopireton.finalproject;
 
+import android.view.View;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
@@ -72,6 +73,11 @@ public class User {
     //if this returns true, user busted
     public boolean checkBust() {
         return sumCards() > 21;
+    }
+
+    public void disappearViews() {
+        for(ImageView i: images)
+            i.setVisibility(View.GONE);
     }
 }
 

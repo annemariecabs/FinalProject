@@ -12,10 +12,13 @@ public class EndingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ending);
-
-        setValues();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        setValues();
+    }
     public void setValues() {
         TextView winSign = (TextView) findViewById(R.id.winner_sign);
         TextView playerPts = (TextView) findViewById(R.id.your_points);
@@ -38,14 +41,14 @@ public class EndingActivity extends AppCompatActivity {
         else if(MainActivity.playerOutcome.equals("busted"))
             playerResult.setText(R.string.busted);
         else if(MainActivity.playerOutcome.equals("blackjack"))
-            playerResult.setText(R.string.blackjack);
+            playerResult.setText("BLACK\nJACK");
 
         if(MainActivity.houseOutcome.equals("stayed"))
             houseResult.setText(R.string.stayed);
         else if(MainActivity.houseOutcome.equals("busted"))
             houseResult.setText(R.string.busted);
         else if(MainActivity.houseOutcome.equals("blackjack"))
-            houseResult.setText(R.string.blackjack);
+            houseResult.setText("BLACK\nJACK");
     }
 
     public void onHome(View view) {
