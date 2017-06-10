@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -85,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
         house.addCard(deck.deal());
         setCard(house.nextView(), house.cards().get(1));
 
+        ((TextView) findViewById(R.id.your_value)).setText("Value: " + player.sumCards());
+
         if(player.sumCards() != 21 && house.sumCards() != 21) {
             //make both buttons appear
             stayButton.setVisibility(View.VISIBLE);
@@ -106,18 +111,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void hitOnClick(View view) {
         player.addCard(deck.deal());
-        setCard(player.nextView(), player.cards().get(timesHit + 2));//+ 2 because there are already two cards
+        setCard(player.nextView(), player.cards().get(timesHit + 2));
+        ((TextView) findViewById(R.id.your_value)).setText("Value: " + player.sumCards());
+        timesHit++;
 
-        checkWhenHit();
-    }
-
-    public void checkWhenHit() {
-        if(! player.checkBust())
-            timesHit++;
-        else {
+        if (player.checkBust()) {
             playerOutcome = "busted";
             winner = house;
-
             movingOn();
         }
     }

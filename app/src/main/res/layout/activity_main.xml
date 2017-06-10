@@ -21,7 +21,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@android:color/holo_red_dark" />
+        app:srcCompat="@android:color/holo_red_dark"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/player1"
@@ -38,7 +40,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.786"
-        app:srcCompat="@android:color/holo_red_dark" />
+        app:srcCompat="@android:color/holo_red_dark"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/player2"
@@ -55,7 +59,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.786"
-        app:srcCompat="@android:color/holo_red_light" />
+        app:srcCompat="@android:color/holo_red_light"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/comp2"
@@ -72,7 +78,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@android:color/holo_red_light" />
+        app:srcCompat="@android:color/holo_red_light"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/player3"
@@ -89,7 +97,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.786"
-        app:srcCompat="@android:color/holo_orange_dark" />
+        app:srcCompat="@android:color/holo_orange_dark"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/comp3"
@@ -106,7 +116,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@android:color/holo_orange_dark" />
+        app:srcCompat="@android:color/holo_orange_dark"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/player4"
@@ -123,7 +135,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.786"
-        app:srcCompat="@android:color/holo_orange_light" />
+        app:srcCompat="@android:color/holo_orange_light"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/comp4"
@@ -140,7 +154,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@android:color/holo_orange_light" />
+        app:srcCompat="@android:color/holo_orange_light"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/player5"
@@ -157,7 +173,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.786"
-        app:srcCompat="@android:color/holo_green_light" />
+        app:srcCompat="@android:color/holo_green_light"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/comp5"
@@ -174,7 +192,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@android:color/holo_green_light" />
+        app:srcCompat="@android:color/holo_green_light"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/player6"
@@ -191,7 +211,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.786"
-        app:srcCompat="@android:color/holo_blue_bright" />
+        app:srcCompat="@android:color/holo_blue_bright"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/comp6"
@@ -208,7 +230,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@android:color/holo_blue_bright" />
+        app:srcCompat="@android:color/holo_blue_bright"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/player7"
@@ -225,7 +249,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.786"
-        app:srcCompat="@android:color/holo_blue_light" />
+        app:srcCompat="@android:color/holo_blue_light"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/comp7"
@@ -242,7 +268,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@android:color/holo_blue_light" />
+        app:srcCompat="@android:color/holo_blue_light"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/player8"
@@ -259,7 +287,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.786"
-        app:srcCompat="@android:color/holo_blue_dark" />
+        app:srcCompat="@android:color/holo_blue_dark"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/comp8"
@@ -276,7 +306,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@android:color/holo_blue_dark" />
+        app:srcCompat="@android:color/holo_blue_dark"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/sign"
@@ -309,13 +341,13 @@
         app:layout_constraintBottom_toTopOf="@+id/sign"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.502" />
+        app:layout_constraintVertical_bias="0.502"
+        android:layout_marginStart="56dp" />
 
     <Button
         android:id="@+id/hit_button"
-        android:layout_width="73dp"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:background="@android:color/holo_green_light"
@@ -329,7 +361,9 @@
         app:layout_constraintLeft_toRightOf="@+id/stay_button"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintVertical_bias="0.541"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/player9"
@@ -345,7 +379,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.786"
-        app:srcCompat="@android:color/holo_purple" />
+        app:srcCompat="@android:color/holo_purple"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/comp9"
@@ -362,6 +398,27 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@android:color/holo_purple" />
+        app:srcCompat="@android:color/holo_purple"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/your_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Value:"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
 
 </android.support.constraint.ConstraintLayout>

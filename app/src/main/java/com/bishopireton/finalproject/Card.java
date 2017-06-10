@@ -41,7 +41,7 @@ public class Card {
         return ace;
     }
 
-    public void switchAce() {
-        ace = !ace;
+    public void setAce(boolean one) {
+        ace = one;
     }
 }
