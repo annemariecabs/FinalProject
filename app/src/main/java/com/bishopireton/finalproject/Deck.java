@@ -23,6 +23,13 @@ public class Deck {
             }
     }
 
+    public void getBlackjack() {
+        cards[0] = new Card(1, 1);
+        cards[1] = new Card(3, 7);
+        cards[2] = new Card(2, 11);
+        cards[3] = new Card(2, 12);
+    }
+
     public void shuffle () {
         for(int j = cards.length - 1; j >= 0; j--) {
             int random = (int) (Math.random() * j);

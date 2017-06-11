@@ -36,19 +36,23 @@ public class EndingActivity extends AppCompatActivity {
         playerPts.setText("" + MainActivity.player.sumCards());
         housePts.setText("" + MainActivity.house.sumCards());
 
-        if(MainActivity.playerOutcome.equals("stayed"))
+        if("stayed".equals(MainActivity.playerOutcome))
             playerResult.setText(R.string.stayed);
-        else if(MainActivity.playerOutcome.equals("busted"))
+        else if("busted".equals(MainActivity.playerOutcome))
             playerResult.setText(R.string.busted);
-        else if(MainActivity.playerOutcome.equals("blackjack"))
+        else if("blackjack".equals(MainActivity.playerOutcome))
             playerResult.setText("BLACK\nJACK");
+        else
+            playerResult.setVisibility(View.GONE);
 
-        if(MainActivity.houseOutcome.equals("stayed"))
+        if("stayed".equals(MainActivity.houseOutcome))
             houseResult.setText(R.string.stayed);
-        else if(MainActivity.houseOutcome.equals("busted"))
+        else if("busted".equals(MainActivity.houseOutcome))
             houseResult.setText(R.string.busted);
-        else if(MainActivity.houseOutcome.equals("blackjack"))
+        else if("blackjack".equals(MainActivity.houseOutcome))
             houseResult.setText("BLACK\nJACK");
+        else
+            houseResult.setVisibility(View.GONE);
     }
 
     public void onHome(View view) {

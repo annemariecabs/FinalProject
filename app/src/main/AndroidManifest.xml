@@ -18,7 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".EndingActivity" />
-        <activity android:name=".CreditActivity"></activity>
+        <activity android:name=".CreditActivity" />
+        <activity android:name=".MoneyActivity" />
+        <activity android:name=".ClickActivity"></activity>
     </application>
 
 </manifest>

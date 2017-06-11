@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private static Button stayButton;
     private static Button hitButton;
     private static int timesHit; //will be used for both users
+    public static boolean blackjack;
 
     public static User winner;
     public static String playerOutcome;
@@ -34,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         setValues();
         initialDeal();
+
+        if(blackjack)
+            movingOn();
     }
 
     public void setValues() {
@@ -63,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         timesHit = 0;
         playerOutcome = null;
         houseOutcome = null;
+        blackjack = true; //will be determined whether it's true in initialDeal
 
         //makes buttons disappear and view disappear
         stayButton.setVisibility(View.GONE);
@@ -90,13 +95,18 @@ public class MainActivity extends AppCompatActivity {
 
         ((TextView) findViewById(R.id.your_value)).setText("Value: " + player.sumCards());
 
+        blackjack();
+        /*
         if(player.sumCards() != 21 && house.sumCards() != 21) {
             //make both buttons appear
             stayButton.setVisibility(View.VISIBLE);
             hitButton.setVisibility(View.VISIBLE);
         }
-        else
+        else {
             blackjack();
+            blackjack = true;
+        }
+        */
     }
 
     public void setImage(ImageView view, int id) {
@@ -131,8 +141,6 @@ public class MainActivity extends AppCompatActivity {
         timesHit = 0;
         while(house.hit()) {
             house.addCard(deck.deal());
-            if (house.checkBust())
-                    break;
             setCard(house.nextView(), house.cards().get(timesHit + 2));
             timesHit++;
         }
@@ -141,7 +149,6 @@ public class MainActivity extends AppCompatActivity {
             houseOutcome = "busted";
             winner = player;
         }
-
         else {
             houseOutcome = "stayed";
             if(house.sumCards() == player.sumCards())
@@ -151,7 +158,6 @@ public class MainActivity extends AppCompatActivity {
             else
                 winner = player;
         }
-
         movingOn();
     }
 
@@ -168,12 +174,15 @@ public class MainActivity extends AppCompatActivity {
             winner = house;
             houseOutcome = "blackjack";
         }
-        else {
+        else if(playerTotal == 21) {
             winner = player;
             playerOutcome = "blackjack";
         }
-
-        movingOn();
+        else {
+            blackjack = false;
+            stayButton.setVisibility(View.VISIBLE);
+            hitButton.setVisibility(View.VISIBLE);
+        }
     }
 
     public void movingOn() {

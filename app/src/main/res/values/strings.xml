@@ -18,4 +18,8 @@
     <string name="filler_money">+ $1000</string>
     <string name="home">HOME</string>
     <string name="credit">CREDITS</string>
+    <string name="back">BACK</string>
+    <string name ="click">click</string>
+    <string name="get_money">Click a button to get money</string>
+    <string name="click_money">Click this button to get money</string>
 </resources>
