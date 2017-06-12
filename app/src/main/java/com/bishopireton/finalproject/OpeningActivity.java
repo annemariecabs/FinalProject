@@ -6,6 +6,17 @@ AnneMarie Caballero
 This is the launcher screen and the center of everything.
 It has buttons to play, to access the money screen, and to access the credit screen.
 It's kinda like Rome, all roads (or to be cs-y) paths lead here
+
+Also I used these sources (other sources in code):
+
+For SharedPreferences:
+https://stackoverflow.com/questions/3624280/how-to-use-sharedpreferences-in-android-to-store-fetch-and-edit-values
+https://stackoverflow.com/questions/3851560/how-to-use-sharedpreferences
+https://developer.android.com/reference/android/content/SharedPreferences.Editor.html
+https://developer.android.com/reference/android/content/SharedPreferences.html
+
+For Starting a New Activity:
+https://developer.android.com/training/basics/firstapp/starting-activity.html
  */
 
 import android.content.Intent;
