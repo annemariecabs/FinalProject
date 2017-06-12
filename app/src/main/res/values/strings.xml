@@ -8,7 +8,7 @@
     <string name="you_lost">YOU LOST</string>
     <string name="stayed">STAYED</string>
     <string name="busted">BUSTED</string>
-    <string name="tie_game">TIE GAME</string>
+    <string name="tie_game">PUSH</string>
     //filler is just there for visual purposes while designing
     <string name="filler_winner">WINNER</string>
     <string name="filler_outcome">RESULT</string>
@@ -19,7 +19,17 @@
     <string name="home">HOME</string>
     <string name="credit">CREDITS</string>
     <string name="back">BACK</string>
-    <string name ="click">click</string>
-    <string name="get_money">Click a button to get money</string>
-    <string name="click_money">Click this button to get money</string>
+    <string name="click">click</string>
+    <string name="get_money">If you had to come here, you have failed. \nClick below for a random amount of money</string>
+    <string name="title_activity_bet">BetActivity</string>
+    <string name="bet">BET</string>
+    <string name="error_toomuch">You do not have enough money</string>
+    <string name="error_toolittle">You have to bet to play</string>
+    <string name="hint">Put your bet here</string>
+    <string name="error_notanumber">Please enter an integer</string>
+    <string name="money_sign">$</string>
+    <string name="click_me">click me</string>
+    <string name="more_money">Get More Money</string>
+    <string name="earned_question">Money Earned:???</string>
+    <string name="error_nothingthere">You have to enter a value</string>
 </resources>

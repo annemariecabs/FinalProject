@@ -13,6 +13,7 @@
         android:layout_marginBottom="68dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
+        android:onClick="onBack"
         android:text="@string/back"
         android:textColor="@android:color/black"
         android:textSize="36sp"
@@ -22,40 +23,43 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.985" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/your_money"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:text="$money"
+        android:onClick="onGetMoney"
+        android:text="@string/filler_money"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="@android:dimen/notification_large_icon_width"
         android:textStyle="bold|italic"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintVertical_bias="0.052" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="223dp"
-        android:layout_height="173dp"
-        android:text="@string/get_money"
+        android:id="@+id/to_click_act"
+        android:layout_width="215dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onGetMoney"
+        android:text="@string/more_money"
         android:textAllCaps="false"
         android:textColor="@android:color/holo_green_light"
-        android:textSize="30sp"
+        android:textSize="36sp"
         android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="0.431" />
+        app:layout_constraintVertical_bias="0.439" />
 
 </android.support.constraint.ConstraintLayout>

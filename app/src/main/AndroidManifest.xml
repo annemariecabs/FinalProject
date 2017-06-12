@@ -20,7 +20,10 @@
         <activity android:name=".EndingActivity" />
         <activity android:name=".CreditActivity" />
         <activity android:name=".MoneyActivity" />
-        <activity android:name=".ClickActivity"></activity>
+        <activity android:name=".ClickActivity" />
+        <activity
+            android:name=".BetActivity"
+            android:label="@string/title_activity_bet"></activity>
     </application>
 
 </manifest>

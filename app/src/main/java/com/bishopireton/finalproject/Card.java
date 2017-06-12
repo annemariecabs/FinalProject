@@ -2,6 +2,7 @@ package com.bishopireton.finalproject;
 
 /**
  * Created by AnneMarie on 6/8/2017.
+ * This creates the Card class
  */
 
 public class Card {

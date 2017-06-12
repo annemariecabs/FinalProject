@@ -2,6 +2,9 @@ package com.bishopireton.finalproject;
 
 /**
  * Created by AnneMarie on 6/8/2017.
+ * This class contains an array of the image ids.
+ * Each id is in a spot pertaining to the card that they correspond to's suit and rank
+ * It also has a helpful method that gets the correct image if you send in a Card.
  */
 
 public class CardImages {

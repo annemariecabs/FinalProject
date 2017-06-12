@@ -13,7 +13,9 @@
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="186dp"
         android:layout_marginRight="8dp"
-        android:text="BLACK\nJACK"
+        android:layout_marginTop="8dp"
+        android:text="@string/filler_outcome"
+        android:gravity="center_horizontal"
         android:textColor="@android:color/holo_blue_bright"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -22,8 +24,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="0.605" />
+        app:layout_constraintVertical_bias="0.598" />
 
     <TextView
         android:id="@+id/winner_sign"
@@ -124,18 +125,18 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:text="BLACK\nJACK"
+        android:text="@string/filler_outcome"
         android:textColor="@android:color/holo_blue_bright"
+        android:gravity="center_horizontal"
         android:textSize="36sp"
         android:textStyle="bold"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.608"
-        tools:layout_editor_absoluteY="256dp" />
+        app:layout_constraintVertical_bias="0.601" />
 
     <TextView
         android:id="@+id/money_result"
@@ -152,7 +153,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/winner_sign"
-        app:layout_constraintVertical_bias="0.728" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <Button
         android:id="@+id/home_button"

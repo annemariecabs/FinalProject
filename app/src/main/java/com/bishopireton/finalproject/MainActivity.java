@@ -96,17 +96,6 @@ public class MainActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.your_value)).setText("Value: " + player.sumCards());
 
         blackjack();
-        /*
-        if(player.sumCards() != 21 && house.sumCards() != 21) {
-            //make both buttons appear
-            stayButton.setVisibility(View.VISIBLE);
-            hitButton.setVisibility(View.VISIBLE);
-        }
-        else {
-            blackjack();
-            blackjack = true;
-        }
-        */
     }
 
     public void setImage(ImageView view, int id) {

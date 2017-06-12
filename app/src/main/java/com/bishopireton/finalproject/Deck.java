@@ -2,6 +2,8 @@ package com.bishopireton.finalproject;
 
 /**
  * Created by AnneMarie on 6/8/2017.
+ * This creates the Deck class, which creates a standard 52 card deck and fills it
+ * It adds a method to shuffle it for you as well
  */
 
 public class Deck {
@@ -23,13 +25,6 @@ public class Deck {
             }
     }
 
-    public void getBlackjack() {
-        cards[0] = new Card(1, 1);
-        cards[1] = new Card(3, 7);
-        cards[2] = new Card(2, 11);
-        cards[3] = new Card(2, 12);
-    }
-
     public void shuffle () {
         for(int j = cards.length - 1; j >= 0; j--) {
             int random = (int) (Math.random() * j);
@@ -40,7 +35,8 @@ public class Deck {
         current = 0; //resets the current field
     }
 
-    public Card[] swap(Card[] cs, int f, int l) {
+    //private because it is only used in shuffle
+    private Card[] swap(Card[] cs, int f, int l) {
         Card temp = cs[l];
         cs[l] = cs[f];
         cs[f] = temp;

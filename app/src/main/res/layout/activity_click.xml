@@ -6,39 +6,73 @@
     android:layout_height="match_parent"
     tools:context="com.bishopireton.finalproject.ClickActivity">
 
-    <Button
-        android:id="@+id/click_button"
-        android:layout_width="196dp"
-        android:layout_height="94dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:elevation="0dp"
-        android:text="@string/click"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467" />
-
     <TextView
         android:id="@+id/directions"
-        android:layout_width="222dp"
-        android:layout_height="138dp"
+        android:layout_width="294dp"
+        android:layout_height="285dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="16dp"
-        android:text="@string/click_money"
+        android:gravity="center"
+        android:text="@string/get_money"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="@android:color/background_light"
-        android:textSize="36sp"
+        android:textSize="30sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="218dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="onClickMe"
+        android:text="@string/click_me"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
+    <TextView
+        android:id="@+id/earnings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/earned_question"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="204dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="onHome"
+        android:text="@string/home"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_button"
+        app:layout_constraintVertical_bias="0.913" />
 
 </android.support.constraint.ConstraintLayout>

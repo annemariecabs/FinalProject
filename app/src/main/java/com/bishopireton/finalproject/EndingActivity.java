@@ -1,6 +1,13 @@
 package com.bishopireton.finalproject;
 
+/*
+AnneMarie Caballero
+6/8/2017
+This activity corresponds to the Ending screen of the game
+ */
+
 import android.content.Intent;
+import android.graphics.Path;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,6 +32,7 @@ public class EndingActivity extends AppCompatActivity {
         TextView housePts = (TextView) findViewById(R.id.house_points);
         TextView playerResult = (TextView) findViewById(R.id.your_outcome);
         TextView houseResult = (TextView) findViewById(R.id.house_outcome);
+        TextView moneyResult = (TextView) findViewById(R.id.money_result);
 
         if(MainActivity.winner == null)
             winSign.setText(R.string.tie_game);
@@ -53,11 +61,41 @@ public class EndingActivity extends AppCompatActivity {
             houseResult.setText("BLACK\nJACK");
         else
             houseResult.setVisibility(View.GONE);
+
+        int moneyWon = determineMoney();
+        if(moneyWon > 0) {
+            moneyResult.setText("+ $" + moneyWon);
+            OpeningActivity.editor.putInt("money", OpeningActivity.yourMoney + moneyWon);
+        }
+        else if(MainActivity.winner == null){
+            moneyResult.setText("------");
+        }
+        else {
+            moneyResult.setText("- $" + BetActivity.yourBet);
+            OpeningActivity.editor.putInt("money", OpeningActivity.yourMoney - BetActivity.yourBet);
+        }
+
+        OpeningActivity.editor.apply();
+
     }
 
     public void onHome(View view) {
         //reset all values somehow
         Intent goBack = new Intent(this, OpeningActivity.class);
         startActivity(goBack);
+    }
+
+    public int determineMoney() {
+        int moneyAwarded = 0;
+
+        if(MainActivity.winner == MainActivity.player) {
+            //if blackjack money has a cents value then it gets rounded to an int
+            if("blackjack".equals(MainActivity.playerOutcome))
+                moneyAwarded = (int) (BetActivity.yourBet * 1.5 + .5);
+            else
+                moneyAwarded = BetActivity.yourBet;
+        }
+
+        return moneyAwarded;
     }
 }

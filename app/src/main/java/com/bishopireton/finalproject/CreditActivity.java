@@ -1,5 +1,12 @@
 package com.bishopireton.finalproject;
 
+/*
+AnneMarie Caballero
+6/9/2017
+This screen corresponds to the Credit screen where I give people and myself credit
+Coding credit is commented in the code though
+ */
+
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;

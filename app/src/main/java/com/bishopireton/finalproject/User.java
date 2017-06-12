@@ -7,6 +7,8 @@ import java.util.ArrayList;
 
 /**
  * Created by AnneMarie on 6/8/2017.
+ * This program creates the User class which is used to represent the users in the game (both player and house)\
+ * However, the house is actually a subclass of User, Computer.
  */
 
 public class User {

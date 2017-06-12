@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 /**
  * Created by AnneMarie on 6/9/2017.
+ * This class creates Computer a subclass of User, which can choose whether to hit or stay based off of
+ * house Blackjack logic
  */
 
 public class Computer extends User {
